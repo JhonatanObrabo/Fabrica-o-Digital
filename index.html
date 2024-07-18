@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Fabricação Digital</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Fabricação Digital" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Fabricação Digital" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Jhonatan Pinheiro Dias" />
+
+
+<meta name="date" content="2024-07-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="impressão-3d.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Máquinas CNC</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#origens"><i class="fa fa-check"></i><b>1.1</b> Origens</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#terminologias"><i class="fa fa-check"></i><b>1.2</b> Terminologias</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#configurações-de-máquina"><i class="fa fa-check"></i><b>1.3</b> Configurações de Máquina</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#operação"><i class="fa fa-check"></i><b>1.3.1</b> Operação</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#estrutura"><i class="fa fa-check"></i><b>1.3.2</b> Estrutura</a></li>
+<li class="chapter" data-level="1.3.3" data-path="index.html"><a href="index.html#guias-e-suportes"><i class="fa fa-check"></i><b>1.3.3</b> Guias e Suportes</a></li>
+<li class="chapter" data-level="1.3.4" data-path="index.html"><a href="index.html#motores"><i class="fa fa-check"></i><b>1.3.4</b> Motores</a></li>
+<li class="chapter" data-level="1.3.5" data-path="index.html"><a href="index.html#acopladores"><i class="fa fa-check"></i><b>1.3.5</b> Acopladores</a></li>
+<li class="chapter" data-level="1.3.6" data-path="index.html"><a href="index.html#transmissão"><i class="fa fa-check"></i><b>1.3.6</b> Transmissão</a></li>
+<li class="chapter" data-level="1.3.7" data-path="index.html"><a href="index.html#eletrônica"><i class="fa fa-check"></i><b>1.3.7</b> Eletrônica</a></li>
+<li class="chapter" data-level="1.3.8" data-path="index.html"><a href="index.html#software"><i class="fa fa-check"></i><b>1.3.8</b> Software</a></li>
+<li class="chapter" data-level="1.3.9" data-path="index.html"><a href="index.html#ferramenta"><i class="fa fa-check"></i><b>1.3.9</b> Ferramenta</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#segurança"><i class="fa fa-check"></i><b>1.4</b> Segurança</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#fluxo-de-trabalho"><i class="fa fa-check"></i><b>1.5</b> Fluxo de Trabalho</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="impressão-3d.html"><a href="impressão-3d.html"><i class="fa fa-check"></i><b>2</b> Impressão 3D</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="impressão-3d.html"><a href="impressão-3d.html#o-que-é-impressora-3d"><i class="fa fa-check"></i><b>2.1</b> O Que é Impressora 3D</a></li>
+<li class="chapter" data-level="2.2" data-path="impressão-3d.html"><a href="impressão-3d.html#como-funciona-a-impressora-3d"><i class="fa fa-check"></i><b>2.2</b> Como Funciona a Impressora 3D</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="impressão-3d.html"><a href="impressão-3d.html#estrutura-e-componentes"><i class="fa fa-check"></i><b>2.2.1</b> Estrutura e Componentes</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="impressão-3d.html"><a href="impressão-3d.html#prática-impressão-de-peça-para-um-projeto."><i class="fa fa-check"></i><b>2.3</b> Prática: Impressão de peça para um projeto.</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="soldagem.html"><a href="soldagem.html"><i class="fa fa-check"></i><b>3</b> Soldagem</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="soldagem.html"><a href="soldagem.html#o-processo-de-soldagem"><i class="fa fa-check"></i><b>3.1</b> O Processo de Soldagem</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="soldagem.html"><a href="soldagem.html#prática"><i class="fa fa-check"></i><b>3.1.1</b> Prática</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="hello-bookdown.html"><a href="hello-bookdown.html"><i class="fa fa-check"></i><b>4</b> Hello bookdown</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="hello-bookdown.html"><a href="hello-bookdown.html#a-section"><i class="fa fa-check"></i><b>4.1</b> A section</a>
+<ul>
+<li class="chapter" data-level="" data-path="hello-bookdown.html"><a href="hello-bookdown.html#an-unnumbered-section"><i class="fa fa-check"></i>An unnumbered section</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="cross.html"><a href="cross.html"><i class="fa fa-check"></i><b>5</b> Cross-references</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="cross.html"><a href="cross.html#chapters-and-sub-chapters"><i class="fa fa-check"></i><b>5.1</b> Chapters and sub-chapters</a></li>
+<li class="chapter" data-level="5.2" data-path="cross.html"><a href="cross.html#captioned-figures-and-tables"><i class="fa fa-check"></i><b>5.2</b> Captioned figures and tables</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="parts.html"><a href="parts.html"><i class="fa fa-check"></i><b>6</b> Parts</a></li>
+<li class="chapter" data-level="7" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html"><i class="fa fa-check"></i><b>7</b> Footnotes and citations</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#footnotes"><i class="fa fa-check"></i><b>7.1</b> Footnotes</a></li>
+<li class="chapter" data-level="7.2" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#citations"><i class="fa fa-check"></i><b>7.2</b> Citations</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="blocks.html"><a href="blocks.html"><i class="fa fa-check"></i><b>8</b> Blocks</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="blocks.html"><a href="blocks.html#equations"><i class="fa fa-check"></i><b>8.1</b> Equations</a></li>
+<li class="chapter" data-level="8.2" data-path="blocks.html"><a href="blocks.html#theorems-and-proofs"><i class="fa fa-check"></i><b>8.2</b> Theorems and proofs</a></li>
+<li class="chapter" data-level="8.3" data-path="blocks.html"><a href="blocks.html#callout-blocks"><i class="fa fa-check"></i><b>8.3</b> Callout blocks</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="sharing-your-book.html"><a href="sharing-your-book.html"><i class="fa fa-check"></i><b>9</b> Sharing your book</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="sharing-your-book.html"><a href="sharing-your-book.html#publishing"><i class="fa fa-check"></i><b>9.1</b> Publishing</a></li>
+<li class="chapter" data-level="9.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>9.2</b> 404 pages</a></li>
+<li class="chapter" data-level="9.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>9.3</b> Metadata for sharing</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fabricação Digital</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Fabricação Digital</h1>
+<p class="author"><em>Jhonatan Pinheiro Dias</em></p>
+<p class="date"><em>2024-07-17</em></p>
+</div>
+<div id="máquinas-cnc" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Máquinas CNC<a href="index.html#máquinas-cnc" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>O cerne da fabricação digital é a tecnologia de controle numérico (CNC). Todas as máquinas que iremos utilizar durante o curso utilizam essa tecnologia, mudando apenas alguns detalhes entre um equipamento e outro. Por isso, é útil discutir, de maneira geral, as características delas antes de entrar na parte prática.</p>
+<div id="origens" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Origens<a href="index.html#origens" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>O CNC nas máquinas surgiu por volta de 1949, tendo os primeiros protótipos sido colocados em funcionamento para teste no Laboratório de Servomecanismo do Instituto de Tecnologia de Massachusetts (MIT). A demonstração prática da primeira máquina com o sistema CNC instalado ocorreu somente três anos depois, em 1952. Seu relatório final, com todos os resultados e apontamentos, viria somente no final do ano seguinte. Com o passar dos anos, a tecnologia nas máquinas CNC passou por constantes aprimoramentos. O desenvolvimento de softwares e controles cada vez mais modernos faz com que elas sejam o que há de melhor em termos de máquinas para indústria.</p>
+</div>
+<div id="terminologias" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Terminologias<a href="index.html#terminologias" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para compreender melhor as máquinas CNC e a fabricação digital, é importante familiarizar-se com algumas terminologias essenciais:</p>
+<ul>
+<li><strong>Fabricação</strong>: é o processo em que um produto ou uma mercadoria passa a existir.</li>
+<li><strong>Manufatura</strong>: processo de transformar matérias-primas em produtos acabados usando máquinas, ferramentas, e processos variados, desde métodos artesanais até produção em larga escala.</li>
+<li><strong>Aditiva</strong>: uma técnica de fabricação onde o material é colocado camada por camada para criação de um objeto.</li>
+<li><strong>Subtrativa</strong>:Uma técnica de fabricação onde o material é modelado retirando matéria prima obter a forma desejada.</li>
+<li><strong>Digital</strong>: Refere-se a sistemas ou processos que empregam dados digitais.</li>
+<li><strong>Fabricação digital</strong>: é o emprego de tecnologias digitais para o controle de processos de fabricação.</li>
+<li><strong>CNC (Computer Numerical Control)</strong>: Controle numérico computadorizado através de comandos utilizando programação.</li>
+<li><strong>CAD (Computer Aided Design)</strong>: Desenho auxiliado por computador, referindo-se a software que permite criar projetos de peças e produtos.</li>
+<li><strong>CAM (Computer Aided Manufacture)</strong>: Fabricação auxiliada por computador.</li>
+<li><strong>Router</strong>: Tipo de máquina CNC utilizada principalmente para cortar, perfurar ou fresar materiais como madeira, plástico e metais leves.</li>
+</ul>
+</div>
+<div id="configurações-de-máquina" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Configurações de Máquina<a href="index.html#configurações-de-máquina" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="operação" class="section level3 hasAnchor" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> Operação<a href="index.html#operação" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>As máquinas CNC podem operar de diferentes maneiras, dependendo de sua configuração:</p>
+<ul>
+<li><strong>Cartesiana</strong>: Utiliza coordenadas X, Y e Z para posicionar a ferramenta.</li>
+<li><strong>Rotacional</strong>: Inclui eixos rotativos que permitem a usinagem de peças cilíndricas ou complexas.</li>
+<li><strong>Cinco eixos</strong>: Centrais de usinagem que permitem a movimentação em cinco eixos diferentes, proporcionando maior flexibilidade e complexidade na fabricação.</li>
+</ul>
+</div>
+<div id="estrutura" class="section level3 hasAnchor" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> Estrutura<a href="index.html#estrutura" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A estrutura das máquinas CNC geralmente inclui:</p>
+<ul>
+<li><strong>Base</strong>: Suporte principal da máquina.</li>
+<li><strong>Pórtico</strong>: Pode ser fixo ou móvel, suporta a ferramenta de usinagem.</li>
+<li><strong>Mesa</strong>: Superfície onde o material é colocado para usinagem.</li>
+<li><strong>Eixos</strong>: Direcionam o movimento da ferramenta e do material.</li>
+</ul>
+</div>
+<div id="guias-e-suportes" class="section level3 hasAnchor" number="1.3.3">
+<h3><span class="header-section-number">1.3.3</span> Guias e Suportes<a href="index.html#guias-e-suportes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Guia</strong>: Direciona o movimento ao longo dos eixos.</li>
+<li><strong>Cilíndrica</strong>: Movimento em torno de um eixo cilíndrico.</li>
+<li><strong>Retangular</strong>: Movimento linear ao longo de eixos retangulares.</li>
+<li><strong>Suporte de guia</strong>: Mantém as guias em posição.</li>
+<li><strong>Pillow block e rolamentos lineares</strong>: Suportes para eixos rotativos.</li>
+<li><strong>Patins</strong>: Componentes que deslizam ao longo das guias.</li>
+</ul>
+</div>
+<div id="motores" class="section level3 hasAnchor" number="1.3.4">
+<h3><span class="header-section-number">1.3.4</span> Motores<a href="index.html#motores" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Passos</strong>: Motores que movimentam em pequenos incrementos.</li>
+<li><strong>DC/Servo</strong>: Motores de corrente contínua/servomotores.</li>
+<li><strong>AC</strong>: Motores de corrente alternada.</li>
+</ul>
+</div>
+<div id="acopladores" class="section level3 hasAnchor" number="1.3.5">
+<h3><span class="header-section-number">1.3.5</span> Acopladores<a href="index.html#acopladores" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Flexível</strong>: Permite flexibilidade entre os componentes conectados.</li>
+<li><strong>“Mandíbula”</strong>: Acoplador que usa dentes para conexão.</li>
+</ul>
+</div>
+<div id="transmissão" class="section level3 hasAnchor" number="1.3.6">
+<h3><span class="header-section-number">1.3.6</span> Transmissão<a href="index.html#transmissão" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Correia</strong>: Transmissão de movimento através de correias.</li>
+<li><strong>Polia lisa e dentada</strong>: Utilizadas para guiar as correias.</li>
+<li><strong>Core XY</strong>: Sistema de movimento que utiliza duas correias em eixos diferentes.</li>
+<li><strong>Fuso</strong>: Componente roscado que converte movimento rotacional em linear.</li>
+<li><strong>Castanha, mancal, suporte e rolamentos</strong>: Componentes que suportam e guiam o fuso.</li>
+</ul>
+</div>
+<div id="eletrônica" class="section level3 hasAnchor" number="1.3.7">
+<h3><span class="header-section-number">1.3.7</span> Eletrônica<a href="index.html#eletrônica" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Placa de controle</strong>: Gerencia os comandos para os motores e outras partes da máquina.</li>
+<li><strong>Drivers de motor</strong>: Controlam a potência fornecida aos motores.</li>
+<li><strong>Alimentação</strong>: Fonte de energia para os componentes eletrônicos.</li>
+<li><strong>Acionamento e controle de potência</strong>: Regula a energia que alimenta os motores e outros componentes.</li>
+</ul>
+</div>
+<div id="software" class="section level3 hasAnchor" number="1.3.8">
+<h3><span class="header-section-number">1.3.8</span> Software<a href="index.html#software" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Firmware</strong>: Software embarcado que controla o hardware da máquina.</li>
+<li><strong>GRBL</strong>: Firmware popular para controle de máquinas CNC.</li>
+<li><strong>G-Code</strong>: Linguagem de programação utilizada para controlar máquinas CNC.</li>
+<li><strong>Controle</strong>: Softwares que permitem o controle das máquinas, como Candle, Mach 3 e Linux CNC.</li>
+</ul>
+</div>
+<div id="ferramenta" class="section level3 hasAnchor" number="1.3.9">
+<h3><span class="header-section-number">1.3.9</span> Ferramenta<a href="index.html#ferramenta" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ul>
+<li><strong>Usinagem</strong>: Ferramentas como spindle, fresas e brocas.</li>
+<li><strong>Impressão</strong>: Materiais como filamento, resina, metal, concreto, argila e orgânicos.</li>
+<li><strong>Laser</strong>: Tecnologias de corte e gravação a laser, incluindo CO2, fibra e diodo.</li>
+<li><strong>Costura, Corte Vinil, Soldagem, Injeção</strong>: Outras aplicações específicas.</li>
+</ul>
+</div>
+</div>
+<div id="segurança" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Segurança<a href="index.html#segurança" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A segurança é um aspecto muito importante ao operar máquinas CNC. Alguns dos equipamentos de segurança recomendados são:</p>
+<ul>
+<li><strong>Óculos</strong>: Proteção para os olhos contra detritos e faíscas.</li>
+<li><strong>Luvas</strong>: Proteção para as mãos contra cortes e abrasões.</li>
+<li><strong>Máscaras</strong>: Proteção contra inalação de poeiras e fumos.</li>
+<li><strong>Vestimenta</strong>: Roupas adequadas para proteção contra riscos específicos.</li>
+</ul>
+</div>
+<div id="fluxo-de-trabalho" class="section level2 hasAnchor" number="1.5">
+<h2><span class="header-section-number">1.5</span> Fluxo de Trabalho<a href="index.html#fluxo-de-trabalho" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>O fluxo de trabalho de fabricação digital segue estas etapas:</p>
+<ul>
+<li><p><strong>CAD (Computer Aided Design)</strong>: Criação do projeto digital utilizando software de design.</p></li>
+<li><p><strong>CAM (Computer Aided Manufacture)</strong>: Preparação do projeto para fabricação, incluindo a geração de G-Code.</p></li>
+<li><p><strong>Fabricação</strong>: Execução do processo de fabricação utilizando a máquina CNC.</p>
+<h1 id="máquina-a-laser" class="hasAnchor">Máquina a Laser<a href="index.html#máquina-a-laser" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="images/WhatsApp%20Image%202024-07-17%20at%2020.41.38.jpeg" style="display:block; margin:0 auto;;width:50.0%" /></p>
+<center>
+<p>Máquina de corte a Laser.</p>
+</center>
+<h2 id="o-que-é-uma-máquina-a-laser" class="hasAnchor">O Que é uma Máquina a Laser<a href="index.html#o-que-é-uma-máquina-a-laser" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A máquina de Corte e gravação a laser é uma tecnologia que utiliza de um laser de alta potência, para cortar materiais como pano, couro, acrílico, vidro acrílico, plástico e papelão. São normalmente usadas para aplicações de fabricação industrial, mas também está começando a ser usada por escolas e pequenas empresas. A versatilidade e a precisão das máquinas a laser as tornam ferramentas indispensáveis em muitos processos de fabricação. É importante não utilizar materiais derivados de petróleo durante o processo, por conta do vapor tóxico gerado.</p>
+<h2 id="como-funciona-a-máquina-a-laser" class="hasAnchor">Como Funciona a Máquina a Laser<a href="index.html#como-funciona-a-máquina-a-laser" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h3 id="estrutura-1" class="hasAnchor">Estrutura<a href="index.html#estrutura-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Uma máquina a laser funciona utilizando um feixe de laser concentrado para cortar, gravar ou marcar materiais com alta precisão, ele é direcionado para a superfície do material a ser trabalhado. Os componentes principais de uma máquina a laser incluem a fonte de laser, os eixos de movimentação, os espelhos, a lente focalizadora e o sistema de controle.</p>
+<h4 id="processo-de-corte" class="hasAnchor">Processo de Corte<a href="index.html#processo-de-corte" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A fonte de laser é o componente que gera o feixe de luz,um tubo de laser de CO2 é usado devido à sua eficiência e capacidade de gerar um feixe de laser poderoso. Os espelhos direcionam o feixe de laser através do caminho adequado, enquanto as lentes focalizam o feixe no ponto exato onde o corte ou gravação ocorrerá. Os eixos de movimentação de uma máquina a laser são fundamentais para sua operação precisa e eficiente, o eixo X e Y, são os que executam os movimentos horizontais e verticais respectivamente, quanto o eixo Z altera a altura em que o feixe vai operar no material utilizado.</p>
+<p><img src="images/WhatsApp%20Image%202024-07-17%20at%2020.36.52.jpeg" style="display:block; margin:0 auto;;width:50.0%" /></p>
+<ul>
+<li><center>
+Corte de Papelão.
+</center></li>
+</ul>
+<p>O sistema de controle coordena os movimentos dos eixos, ajusta os parâmetros do laser e executa o design programado,ou seja, é responsável pela posição do feixe. O software de controle permite importar arquivos de design e ajustar os parâmetros de corte e gravação conforme necessário.</p>
+<h2 id="prática-projeto-da-caixa" class="hasAnchor">Prática: Projeto da Caixa<a href="index.html#prática-projeto-da-caixa" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para colocar em prática os estudos acima sobre a máquina, desenvolvi uma caixa dentada de encaixe, que envolve o corte de papelão utilizando o corte a laser.Retirei o modelo da caixa no site MakerCase, nessa plataforma é possivel criar projetos personalizados de caixas ajustando dimensões, espessura do material e outros parâmetros. O site gera automaticamente o arquivo SVG necessário para a máquina a laser executar. Após a escolha do modelo da caixa, fiz todos os ajustes na máquina, como: Fixação do papelão na mesa de corte, alteração da potencia do laser, distância do laser para o material e velocidade do corte, depois disso retirei o material e montei a caixa.</p>
+<p><img src="images/WhatsApp%20Image%202024-07-17%20at%2020.36.35.jpeg" style="display:block; margin:0 auto;;width:50.0%" /></p>
+<center>
+<p>Caixa Pronta.</p>
+</center></li>
+</ul>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="impressão-3d.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
